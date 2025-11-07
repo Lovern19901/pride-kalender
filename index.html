@@ -1,12 +1,12 @@
 <!Doctype html>
-<html lang="no">
-<meta charset="UTF-8">
+<html>
 <head>
 <title>Regnbue Kalender</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     .oppsett{
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto auto; 
+        grid-template-columns:repeat(8, 1fr);
         gap: 2px;
     }
     .oppsett div:hover{
@@ -45,6 +45,24 @@
     h1{
         font-size: 50px;
         text-align: center;
+    }
+    @media(max-width:900px){
+        .oppsett div{
+            padding: 10px;
+            font-size: 100%;
+        }
+        h1 {
+            font-size: 28px;
+        }
+    }
+    @media (max-width:600px){
+        .oppsett div {
+            padding: 6px;
+            font-size: 80px;
+        }
+        h1 {
+            font-size: 24px;
+        }
     }
     
 </style>
@@ -201,30 +219,7 @@
      <div class="item-6">
         2. November
      </div>
-     <div class="item-7">
-        Uke 45
-     </div>
-     <div class="item-7">
-        3. November
-     </div>
-     <div class="item-7">
-        4. November
-     </div>
-     <div class="item-7">
-        5. November
-     </div>
-     <div class="item-7">
-        6. November
-     </div>
-     <div class="item-7">
-        7. November
-     </div>
-     <div class="item-7">
-        8. November
-     </div>
-     <div class="item-7">
-        9. November
-     </div>
+
 
 </div>
 
@@ -234,4 +229,3 @@
 
 </body>
 </html>
-
